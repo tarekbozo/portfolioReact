@@ -41,7 +41,7 @@ const Navbar = () => {
                 Experience
               </Link>
             </li>
-            <li className='navigation__item'>
+            <li onClick={() => setOpen(!open)} className='navigation__item'>
               <Link to='projects' className='navigation__link-btn'>
                 Projects
               </Link>
