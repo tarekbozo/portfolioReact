@@ -33,8 +33,10 @@
     font-weight: 600;
     letter-spacing: 0px;
     line-height: 2.4rem;
-    @media screen and (max-width: 1200px) {
-      font-size: 1.2rem;
+    @media screen and (max-width: 768px) {
+      background-color: hsla(0, 0%, 100%, 0.18);
+      padding: 2rem;
+      border-radius: 0.7rem 0.7rem 0 0;
     }
   }
 }
