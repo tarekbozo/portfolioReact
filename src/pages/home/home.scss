@@ -1,0 +1,108 @@
+.header {
+  height: calc(100vh - 9rem);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  column-gap: 4rem;
+  align-items: center;
+
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    align-items: center;
+    color: aliceblue;
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+      grid-template-rows: repeat(4, 1fr);
+      grid-column: 1/-1;
+      justify-self: center;
+      align-self: center;
+      height: 65vh;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1245px) {
+      grid-template-rows: repeat(3, 1fr);
+    }
+
+    &-name {
+      grid-column: 2/4;
+      font-size: 4rem;
+      @media screen and (max-width: 48rem) {
+        font-size: 2.5rem;
+        justify-self: center;
+        align-self: end;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1245px) {
+        font-size: 2.5rem;
+        justify-self: start;
+        align-self: end;
+      }
+    }
+    &-title {
+      grid-column: 2/4;
+      font-size: 3rem;
+      align-self: start;
+      @media screen and (max-width: 48rem) {
+        font-size: 2rem;
+        justify-self: center;
+        align-self: end;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1245px) {
+        font-size: 2.2rem;
+        grid-row: 2/3;
+      }
+    }
+
+    &-desc {
+      grid-column: 2/4;
+      font-size: 2rem;
+      @media screen and (max-width: 48rem) {
+        margin: 0px auto;
+        text-align: center;
+        margin: 0 2rem 0 2rem;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1245px) {
+        font-size: 1.5rem;
+        grid-row: 4/2;
+        margin: 5rem 0 5rem 0;
+      }
+    }
+    &-btn {
+      grid-column: 2/3;
+      justify-self: start;
+      align-self: end;
+      background-color: rgba(241, 232, 232, 0.356);
+      padding: 1rem 1.6rem;
+      border-radius: 1.6rem;
+      border: none;
+      font-size: 2rem;
+
+      &-link {
+        text-decoration: none;
+        color: aliceblue;
+      }
+      &:hover {
+        background-color: transparent;
+        color: #ffffff;
+        padding: 1rem 1.6rem;
+        border-radius: 1.6rem;
+        border: solid 0.1rem rgba(241, 232, 232, 0.356);
+        transition: all 0.3s;
+      }
+      @media screen and (max-width: 48rem) {
+        grid-column: 2 / span 2;
+        justify-self: center;
+        align-self: center;
+      }
+      @media screen and (min-width: 768px) and (max-width: 1245px) {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+  &__img {
+    margin-right: 6rem;
+    @media screen and (max-width: 48rem) {
+      display: none;
+    }
+  }
+}
