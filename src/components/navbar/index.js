@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
+
   return (
     <>
       <div className='navigation'>
@@ -25,7 +26,7 @@ const Navbar = () => {
             <span className='navigation__menu-toggle-bar'></span>
           </div>
           <ul className={open ? 'navigation__list active' : 'navigation__list'}>
-            <li onClick={() => setOpen(!open)} className='navigation__item'>
+            <li onClick={() => setOpen(false)} className='navigation__item'>
               <Link to='/' className='navigation__link'>
                 Home
               </Link>

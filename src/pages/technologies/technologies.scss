@@ -19,7 +19,9 @@
     padding: 0;
   }
   padding: 2rem;
-  align-self: center;
+  // // align-self: center;
+  // display: grid;
+  // grid-template-rows: auto;
 
   &__text {
     font-size: 1.5rem;

@@ -1,5 +1,53 @@
+.projects {
+  display: grid;
+  //row-gap: 7rem;
+  column-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  padding-top: 8rem;
+  margin: 0px auto;
+  max-width: 70vw;
+  width: 100%;
+
+  // @media screen and (max-width: 1200px) {
+  //   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  //   row-gap: 0;
+  // }
+}
+.content-projects {
+  align-self: center;
+}
+
 .tag {
   display: grid;
   font-size: 10rem;
   justify-content: center;
+}
+.btn-wrapper {
+  margin-top: 2rem;
+  @media screen and (max-width: 768px) {
+    grid-row: 3/4;
+  }
+  @media screen and (min-width: 800px) {
+    grid-row: 2/3;
+  }
+}
+
+.github-link {
+  background-color: rgba(241, 232, 232, 0.356);
+  padding: 1rem 1.6rem;
+  border-radius: 1.6rem;
+  border: none;
+  font-size: 2rem;
+
+  text-decoration: none;
+  color: aliceblue;
+
+  &:hover {
+    background-color: transparent;
+    color: #ffffff;
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    border: solid 0.1rem rgba(241, 232, 232, 0.356);
+    transition: all 0.3s;
+  }
 }
