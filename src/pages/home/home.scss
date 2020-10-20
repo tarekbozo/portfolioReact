@@ -1,5 +1,5 @@
 .header {
-  height: calc(100vh - 9rem);
+  //height: calc(100vh - 9rem);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
   column-gap: 4rem;
@@ -74,12 +74,18 @@
       grid-column: 2/3;
       justify-self: start;
       align-self: end;
-      background-color: rgba(241, 232, 232, 0.356);
-      padding: 1rem 1.6rem;
-      border-radius: 1.6rem;
-      border: none;
+      color: #ffffff2f;
       font-size: 2rem;
-
+      background: linear-gradient(
+        rgba(24, 32, 79, 0.4) 0%,
+        rgba(24, 32, 79, 0.4) 100%
+      );
+      box-shadow: rgba(0, 0, 0, 0.15) 0px 20px 40px,
+        rgba(0, 0, 0, 0.2) 0px 0px 0px 0.5px inset;
+      border-radius: 30px;
+      border: none;
+      padding: 10px 30px 10px 30px;
+      cursor: pointer;
       &-link {
         text-decoration: none;
         color: aliceblue;

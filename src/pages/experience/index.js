@@ -1,5 +1,6 @@
 import React from 'react';
 import './experience.scss';
+import { Link } from 'react-router-dom';
 
 const Experience = () => {
   return (
@@ -77,6 +78,13 @@ const Experience = () => {
               alt='Javascript'
             />
           </figure>
+        </div>
+        <div className='next-btn'>
+          <button className='header__content-btn'>
+            <Link className='header__content-btn-link' to='/projects'>
+              Projects
+            </Link>
+          </button>
         </div>
       </section>
     </>

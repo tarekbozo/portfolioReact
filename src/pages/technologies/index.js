@@ -1,12 +1,13 @@
 import React from 'react';
 import './technologies.scss';
+import { Link } from 'react-router-dom';
 
 const Technologies = () => {
   return (
     <>
       <section className='technologes'>
         <div className='content'>
-          <h3 className='content__subtitle'>Javascript</h3>
+          <h3 className='content__subtitle'>Javascript .</h3>
           <p className='content__text'>
             I have a good amount of experience with JavaScript, building
             websites, apps . I have worked with ECMA Script 2016 and have
@@ -57,7 +58,7 @@ const Technologies = () => {
           </figure>
         </div>
         <div className='content'>
-          <h3 className='content__subtitle'>React.</h3>
+          <h3 className='content__subtitle'>React .</h3>
           <p className='content__text'>
             I have 4 years experience with React, building websites,
             applications, and component libraries. I have used both Redux and
@@ -111,6 +112,13 @@ const Technologies = () => {
               alt='graphql'
             />
           </figure>
+        </div>
+        <div className='next-btn'>
+          <button className='header__content-btn'>
+            <Link className='header__content-btn-link' to='/experience'>
+              Experience
+            </Link>
+          </button>
         </div>
       </section>
     </>
