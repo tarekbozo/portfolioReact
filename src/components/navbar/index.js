@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './navbar.scss';
 import { FaLinkedin, FaGithub, FaTwitter, FaFacebookF } from 'react-icons/fa';
-import { useEffect } from 'react';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
