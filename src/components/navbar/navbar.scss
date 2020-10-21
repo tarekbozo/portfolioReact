@@ -1,6 +1,5 @@
 .navigation {
   display: grid;
-  //height: 7vw;
   padding: 3rem;
   grid-template-columns: repeat(1, 1fr);
 
@@ -11,7 +10,6 @@
     &-item {
       display: inline;
       margin-left: 2rem;
-
       text-decoration: none;
     }
     &-link {
@@ -36,9 +34,8 @@
       backdrop-filter: blur(40px) brightness(80%) saturate(150%);
       border-radius: 20px;
       opacity: 0;
+      visibility: hidden;
       transition: all 0.8s cubic-bezier(0.075, 0.82, 0.165, 1) 0s;
-      transform-origin: center top;
-      transform: rotateX(0deg) translateY(0px);
     }
   }
   .social-warpper {
@@ -69,7 +66,7 @@
   }
 
   &__menu-toggle {
-    z-index: 10000;
+    z-index: 2;
     position: absolute;
     top: 4%;
     right: 10%;
@@ -88,129 +85,9 @@
   }
   .active {
     opacity: 1;
+    visibility: visible;
   }
 }
-
-//   &__nav {
-//     // display: grid;
-//     // grid-template-columns: 0.2fr 1fr;
-//     // grid-template-rows: 6rem;
-//     align-items: center;
-//     font-size: 1.5rem;
-//     padding: 1.5rem;
-
-//     @media screen and (max-width: 48rem) {
-//       width: 100%;
-//     }
-//   }
-//   &__logo {
-//     color: white;
-//     justify-self: center;
-//     margin-left: 2rem;
-//     font-size: 4rem;
-//     cursor: pointer;
-//   }
-//   a {
-//     text-decoration: none;
-//     color: #ffffff;
-//   }
-
-//   &__list {
-//     display: grid;
-//     grid-template-columns: repeat(5, 1fr);
-//     grid-column: 8/-1;
-//     justify-self: center;
-//     list-style: none;
-//     margin-right: 3rem;
-
-//     @media screen and (max-width: 48rem) {
-//       display: grid;
-//       grid-template-columns: auto;
-//       background-image: linear-gradient(145deg, #2a66c6 0%, #661b80 95%);
-//       margin: 0;
-//       width: 100%;
-//       position: absolute;
-//       top: 6rem;
-//       left: -100%;
-//       opacity: 0;
-//       transition: all 0.5s ease;
-//     }
-//   }
-
-//   .active {
-//     left: 0;
-//     opacity: 1;
-//     transition: all 0.5s ease;
-//   }
-
-//   &__link {
-//     color: #ffffff;
-//     text-decoration: none;
-//     @media screen and (max-width: 48rem) {
-//       font-size: 2.5rem;
-//       text-align: center;
-//       line-height: 6rem;
-//       width: 100%;
-//       display: table;
-//     }
-//   }
-//   &__link:hover {
-//     color: rgba(255, 255, 255, 0.24);
-//     transition: all 0.2s ease-out;
-//     @media screen and (max-width: 48rem) {
-//       background-color: rgba(255, 255, 255, 0.301);
-//       color: #ffffff;
-//     }
-//   }
-//   &__item {
-//     text-align: center;
-//     margin-right: 2rem;
-//     @media screen and (max-width: 48rem) {
-//       margin-right: 0;
-//     }
-//   }
-
-//   &__link-btn {
-//     background-color: rgba(241, 232, 232, 0.356);
-//     color: white;
-//     padding: 1rem 1.6rem;
-//     border-radius: 1.6rem;
-//     text-decoration: none;
-
-//     @media screen and (max-width: 48rem) {
-//       text-align: center;
-//       line-height: 6rem;
-//     }
-//   }
-//   &__link-btn:hover {
-//     background-color: transparent;
-//     color: #ffffff;
-//     padding: 1rem 1.6rem;
-//     border-radius: 1.6rem;
-//     border: solid 0.1rem rgba(241, 232, 232, 0.356);
-//     transition: all 0.3s;
-//   }
-//   &__menu-toggle {
-//     position: absolute;
-//     top: 30%;
-//     right: 10%;
-//     transform: translate(5%, 30%);
-//     &-bar {
-//       width: 2.5rem;
-//       height: 0.2rem;
-//       margin: 0.5rem auto;
-//       transition: all 0.3s ease-in-out;
-//       background-color: #ffffff;
-//       @media screen and (max-width: 48rem) {
-//         display: block;
-//         cursor: pointer;
-//       }
-//     }
-//   }
-//   &__menu-toggle:hover {
-//     cursor: pointer;
-//   }
-// }
 
 .is-active .navigation__menu-toggle-bar:nth-child(1) {
   transform: translateY(0.7rem) rotate(45deg);
@@ -221,7 +98,3 @@
 .is-active .navigation__menu-toggle-bar:nth-child(3) {
   transform: translateY(-0.7rem) rotate(-45deg);
 }
-
-// background: rgba(15, 14, 71, 0.3);
-// box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 0.5px inset;
-// backdrop-filter: blur(40px) brightness(80%) saturate(150%);
