@@ -10,8 +10,8 @@ const Experience = () => {
           <h3 className='content__subtitle'>Freelancer Developer</h3>
           <span className='content__tag'>2018 -present</span>
           <p className='content__text'>
-            I freelanced for berlin-based agencies as Full stack Developer .
-            Application build with React js in front and node js in the back .
+            I freelanced for berlin-based agencies as Full stack Developer.
+            Application build with React js in front and node js in the back.
           </p>
           <div className='tags-wrapper'>
             <span className='content__tag'>React.js</span>{' '}

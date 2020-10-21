@@ -10,7 +10,7 @@ const Technologies = () => {
           <h3 className='content__subtitle'>Javascript .</h3>
           <p className='content__text'>
             I have a good amount of experience with JavaScript, building
-            websites, apps . I have worked with ECMA Script 2016 and have
+            websites, apps. I have worked with ECMA Script 2016 and have
             professional experience with modern tooling such as Node, Webpack,
             Babel and the package managers npm and yarn. I have worked in TDD
             environments and have used the testing framework Jest.
@@ -58,7 +58,7 @@ const Technologies = () => {
           </figure>
         </div>
         <div className='content'>
-          <h3 className='content__subtitle'>React .</h3>
+          <h3 className='content__subtitle'>React.</h3>
           <p className='content__text'>
             I have 4 years experience with React, building websites,
             applications, and component libraries. I have used both Redux and
